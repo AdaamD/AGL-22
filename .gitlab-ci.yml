@@ -1,8 +1,7 @@
 
 image: maven:3.8.1-jdk-11-openj9
 
-variables:
-  SONAR_TOKEN: "b230fcacebd79f43b76cf9e8b82f98e056ac4e2c"
+
 
 stages:          
   - build
