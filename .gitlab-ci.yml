@@ -1,21 +1,16 @@
 
 image: maven:3.8.1-jdk-11-openj9
 
+variables:
+  SONAR_TOKEN: "b230fcacebd79f43b76cf9e8b82f98e056ac4e2c"
+
 stages:          
   - build
   - test
   - deploy
   - check
 
-#build-job:       
- # stage: build
-  #script:
-   #   - mvn package -DskipTest
 
-#test-job:
- # stage: test
-  #script:
-   # - mvn test
 
 check-job :
   stage: check
